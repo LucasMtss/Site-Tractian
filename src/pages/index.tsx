@@ -9,11 +9,17 @@ import HowItWorks from '../sections/HowItWorks';
 import Contact from '../sections/Contact';
 import Footer from '../sections/Footer';
 
-import { Container } from './_styles';
-
 const Home: NextPage = () => {
   return (
-    <Container>
+    <div
+      style={{
+        width: '98%',
+        display: 'flex',
+        flexDirection: 'column',
+        margin: '2%',
+        marginTop: '8rem',
+      }}
+    >
       <Header />
       <BackgroundLines />
       <Apresentation />
@@ -23,7 +29,7 @@ const Home: NextPage = () => {
       <HowItWorks />
       <Contact />
       <Footer />
-    </Container>
+    </div>
   );
 };
 
